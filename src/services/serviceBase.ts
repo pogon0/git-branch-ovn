@@ -1,8 +1,10 @@
-type Pokemon = {
-  name: string;
-  weight: number;
-  isDefault: boolean;
-};
+// type Pokemon = {
+//   name: string;
+//   weight: number;
+//   isDefault: boolean;
+// };
+
+import type { Pokemon } from "../models/Pokemon";
 
 export const getData = async (searchTerm: string) => {
   const response = await fetch(
