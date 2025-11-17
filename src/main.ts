@@ -26,5 +26,5 @@ document.getElementById("searchForm")?.addEventListener("submit", async (e) => {
   }
 });
 
-const pokemon: Pokemon[] = JSON.parse(localStorage.getItem("pokemon") || "[]");
-createHtml(pokemon);
+// const pokemon: Pokemon[] = JSON.parse(localStorage.getItem("pokemon") || "[]");
+// createHtml(pokemon);

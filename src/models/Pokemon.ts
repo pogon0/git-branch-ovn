@@ -1,5 +1,5 @@
 export type Pokemon = {
-    Name: string;
-    Weight: number;
-    isdefault: boolean;
+  name: string;
+  weight: number;
+  isdefault: boolean;
 };
