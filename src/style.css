@@ -94,3 +94,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.pokemonsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.pokemonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
