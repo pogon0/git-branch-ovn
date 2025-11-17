@@ -1,8 +1,4 @@
-type Pokemon = {
-    Name: string;
-    Height: number;
-    IsDefault: boolean;
-}
+import type { Pokemon } from "../models/Pokemon";
 
 export const createHtml = (pokemon: Pokemon) => {
     const app = document.getElementById("app");
@@ -12,18 +8,10 @@ export const createHtml = (pokemon: Pokemon) => {
     const isDefault = document.createElement("p");
 
     name.innerHTML = pokemon.Name;
-    height.innerHTML = pokemon.Height.toString();
+    height.innerHTML = pokemon.Weight.toString();
 
     app?.appendChild(name);
     app?.appendChild(height);
     app?.appendChild(isDefault);
 }
 
-const pikachu: Pokemon = {
-    Name: "pikachu",
-    Height: 6,
-    IsDefault: true
-
-}
-
-createHtml(pikachu);
