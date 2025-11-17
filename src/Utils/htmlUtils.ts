@@ -1,21 +1,29 @@
 type Pokemon = {
-    name: string;
-    height: string;
-    isDefault: string;
+    Name: string;
+    Height: number;
+    IsDefault: boolean;
 }
 
-export const createHtml = () => {
+export const createHtml = (pokemon: Pokemon) => {
     const app = document.getElementById("app");
 
     const name = document.createElement("h2");
     const height = document.createElement("p");
     const isDefault = document.createElement("p");
 
-    name.innerHTML = Pokemon.Name;
-    height.innerHTML = Pokemon.Height;
-    isDefault.innerHTML = Pokemon.IsDefault;
+    name.innerHTML = pokemon.Name;
+    height.innerHTML = pokemon.Height.toString();
 
     app?.appendChild(name);
     app?.appendChild(height);
     app?.appendChild(isDefault);
 }
+
+const pikachu: Pokemon = {
+    Name: "pikachu",
+    Height: 6,
+    IsDefault: true
+
+}
+
+createHtml(pikachu);
