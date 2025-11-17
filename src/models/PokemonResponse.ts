@@ -1,5 +1,5 @@
 import type { Pokemon } from "./Pokemon";
 
-export type PokemonResponse = {
+export type PokemonResponse = { // 
     Results: Pokemon[];
-};
+}; 
